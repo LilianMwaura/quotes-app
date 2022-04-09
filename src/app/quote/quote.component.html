@@ -11,7 +11,6 @@
          <div class="all cards">
              <div *ngFor = "let quote of quotes; let i = index" class ="card">
                 <div class ="card-body">
-                    <!-- <button (click)="toggleDetails(i)">See more</button> -->
                     <div *ngIf = "quote.upvotes == highest && quote.upvotes>0; then highlight else empty"></div>
                         <ng-template #highlight>
                         <li appHighlight> {{quote.quote}} <span> Upvotes :{{quote.upvotes}}</span> <span> Downvotes: {{quote.downvotes}} </span></li>   
@@ -20,19 +19,10 @@
                         <li>{{quote.quote}} <span> Upvotes :{{quote.upvotes}}</span> <span> Downvotes: {{quote.downvotes}} </span></li> 
                         </ng-template>
                         <button (click)="toggleDetails(i)">See more</button>
+                        <app-quote-detail *ngIf='quote.description' [quote]='quote'></app-quote-detail>
                 </div>
              </div>
          </div>
-            <!-- <ul *ngFor = "let quote of quotes; let (i) = index"> 
-                <div *ngIf = "quote.upvotes == highest && quote.upvotes>0; then highlight else empty"></div>
-                <ng-template #highlight>
-                    <li appHighlight> {{quote.quote}} <span> Upvotes :{{quote.upvotes}}</span> <span> Downvotes: {{quote.downvotes}} </span></li>   
-                </ng-template>
-                <ng-template #empty>
-                    <li>{{quote.quote}} <span> Upvotes :{{quote.upvotes}}</span> <span> Downvotes: {{quote.downvotes}} </span></li> 
-                </ng-template>
-                
-            </ul> -->
       </div>
     </div>
   </div>
