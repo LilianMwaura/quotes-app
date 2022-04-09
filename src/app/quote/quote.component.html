@@ -9,7 +9,14 @@
       <div class="col-md-8">
         <h2>My Quotes</h2>
             <ul *ngFor = "let quote of quotes">
-                <li *ngIf ="quote.id==1" appHighlight> {{quote.quote}} <span> Upvotes :{{quote.upvotes}}</span> <span> Downvotes: {{quote.downvotes}} </span></li>
+                <div *ngIf = "quote.upvotes == highest && quote.upvotes>0; then highlight else empty"></div>
+                <ng-template #highlight>
+                    <li appHighlight> {{quote.quote}} <span> Upvotes :{{quote.upvotes}}</span> <span> Downvotes: {{quote.downvotes}} </span></li>   
+                </ng-template>
+                <ng-template #empty>
+                    <li>{{quote.quote}} <span> Upvotes :{{quote.upvotes}}</span> <span> Downvotes: {{quote.downvotes}} </span></li> 
+                </ng-template>
+                
             </ul>
       </div>
     </div>
