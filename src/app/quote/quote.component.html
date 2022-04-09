@@ -1,1 +1,17 @@
-<p>quote works!</p>
+<div class="title">
+    <h1>Welcome to Quotes</h1>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h2> Add a Quote</h2>
+      </div>
+      <div class="col-md-8">
+        <h2>My Quotes</h2>
+            <ul *ngFor = "let quote of quotes">
+                <li> {{quote.quote}} <span> Upvotes :{{quote.upvotes}}</span> <span> Downvotes: {{quote.downvotes}} </span></li>
+
+            </ul>
+      </div>
+    </div>
+  </div>

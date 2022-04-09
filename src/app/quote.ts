@@ -1,5 +1,3 @@
-import { stringify } from "querystring";
-
 export class Quote {
     id: number;
     quote: string;
