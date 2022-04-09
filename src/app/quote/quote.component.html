@@ -9,8 +9,7 @@
       <div class="col-md-8">
         <h2>My Quotes</h2>
             <ul *ngFor = "let quote of quotes">
-                <li> {{quote.quote}} <span> Upvotes :{{quote.upvotes}}</span> <span> Downvotes: {{quote.downvotes}} </span></li>
-
+                <li *ngIf ="quote.id==1" appHighlight> {{quote.quote}} <span> Upvotes :{{quote.upvotes}}</span> <span> Downvotes: {{quote.downvotes}} </span></li>
             </ul>
       </div>
     </div>

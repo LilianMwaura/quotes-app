@@ -12,7 +12,7 @@ export class QuoteComponent implements OnInit {
     new Quote(1,"First quote" ,0 ,0),
     new Quote(2, "Second quote" ,0 ,0),
     new Quote(3, "Third quote" ,0 ,0),
-    new Quote(1, "Fourth quote" ,0 ,0)
+    new Quote(4, "Fourth quote" ,0 ,0)
   ]
   constructor() { }
 
