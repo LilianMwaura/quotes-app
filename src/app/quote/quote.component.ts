@@ -20,6 +20,12 @@ export class QuoteComponent implements OnInit {
   toggleDetails(index: number){
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
   }
+  addNewQuote(quote: any){
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength+1;
+    quote.Date = new Date(quote.Date)
+    this.quotes.push(quote)
+  }
   constructor() { }
 
   ngOnInit(): void {
