@@ -8,7 +8,7 @@
         <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
       </div>
       <div class="col-sm-9">
-         <div class="all cards">
+         <div class="all-cards">
              <div *ngFor = "let quote of quotes; let i = index" class ="card">
                 <div class ="card-body"> 
                     <div *ngIf = "quote.upvotes == highest && quote.upvotes>0; then highlight else empty"></div>
