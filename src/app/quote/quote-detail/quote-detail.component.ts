@@ -7,6 +7,18 @@ import { Quote } from 'src/app/quote';
 })
 export class QuoteDetailComponent implements OnInit {
   @Input () quote!: Quote;
+  isComplete: any;
+
+  quoteDelete(complete:boolean){
+    this.isComplete.emit(complete);
+  }
+
+  upvotes(){
+    this.quote.upvotes+=1;
+  }
+  downvotes(){
+    this.quote.downvotes+=1;
+  }
   constructor() { }
 
   ngOnInit(): void {

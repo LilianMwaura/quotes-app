@@ -10,19 +10,21 @@
         <h2>My Quotes</h2>
          <div class="all cards">
              <div *ngFor = "let quote of quotes; let i = index" class ="card">
-                <div class ="card-body">
+                <div class ="card-body"> 
                     <div *ngIf = "quote.upvotes == highest && quote.upvotes>0; then highlight else empty"></div>
                         <ng-template #highlight>
-                        <li appHighlight> {{quote.quote}} <span> Upvotes :{{quote.upvotes}}</span> <span> Downvotes: {{quote.downvotes}} </span></li>   
+                        <p appHighlight> {{quote.quote}}</p>   
                         </ng-template>
                         <ng-template #empty>
-                        <li>{{quote.quote}} <span> Upvotes :{{quote.upvotes}}</span> <span> Downvotes: {{quote.downvotes}} </span></li> 
+                        <p> {{quote.quote}}</p> 
                         </ng-template>
-                        <button (click)="toggleDetails(i)">See more</button>
-                        <app-quote-detail *ngIf='quote.description' [quote]='quote'></app-quote-detail>
+                        <p> - Posted by {{quote.name}} on {{quote.date}}</p>
+                        <button (click)="toggleDetails(i)" class="btn btn-info btn-sm" id="quotes-button" >See more</button>
+                        <app-quote-detail *ngIf='quote.showDescription'[quote]='quote'(isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
                 </div>
              </div>
          </div>
       </div>
     </div>
   </div>
+  
