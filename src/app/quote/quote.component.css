@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     
+    
 }
 .title{
     text-align: center;
@@ -13,24 +14,25 @@ h2,h3,p{
     font-family: 'Poppins', sans-serif;
 }
 .row {
-    margin :2%;
+    margin :1%;
     padding-top: 1%;
 }
 .overlay{
     background-color:#22aa9a;
     border-radius: 5px;
-    margin-top:4%;
-    margin-left: 4%;
-    margin-right: 4%;
-    margin-bottom: 5%;
-    padding-top: 1%;
-    padding-left: 1%;
+    margin-top:2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 3%;
+    padding-top: 0.5%;
+    padding-left: 0.5%;
     padding-bottom: 5%;
 }
 .all-cards{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-left: 2%;
   }
   #quotes-button{
     float: right;
@@ -44,12 +46,22 @@ h2,h3,p{
     float: right;
     font-size: 14px;
   }
+  #name{
+      color:rgb(1, 29, 1);
+      font-weight: 700;
+  }
   #datecolor{
-    color: #660007;
+    color: rgb(1, 29, 1);
     font-weight: 700;
   }
   .card-text{
     font-weight: 570;
     font-size: 18px;
   }
-  
+  .container-fluid{
+      padding-left: 2%;
+      padding-right: 2%;
+  }
+.col.md-3{
+    padding: 10%;
+}

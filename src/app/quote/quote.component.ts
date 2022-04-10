@@ -9,7 +9,7 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes: Quote[] = [
-    new Quote(1, "Wambui","Sometimes it pays to stay in bed on Monday, rather than spending the rest of the week debugging Monday’s code." ,0 ,0, "-Martin fowler",new Date (2021,3,12)),
+    new Quote(1, "Wambui","Sometimes it pays to stay in bed on Monday, rather than spending the rest of the week debugging Monday’s code." ,0,0, "-Martin fowler",new Date (2021,3,12)),
     new Quote(2, "Joe", "Always code as if the person who ends up maintaining your code will be a violent psychopath who knows where you live." ,0 ,0,"-Oscar Wilde",new Date (2021,7,16)),
     new Quote(3, "Mweru","Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it." ,0 ,0,"-Francis Bacon",new Date (2022,2,10)),
     new Quote(4, "Hulda", "Software and cathedrals are much the same — first we build them, then we pray." ,0 ,0,"-Chris Heilmann",new Date (2020,4,9))
@@ -28,7 +28,7 @@ export class QuoteComponent implements OnInit {
   }
   deleteQuote (isComplete :any, index: any){
     if (isComplete) {
-      let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].name}?`)
+      let toDelete = confirm(`Are you sure you want to delete post by ${this.quotes[index].name}?`)
 
       if (toDelete){
         this.quotes.splice(index,1)
