@@ -1,6 +1,6 @@
 <div class="overlay">
 <div class="title">
-    <h1> Code Quotes</h1>
+    <h1> Code Quotes <span id="icon"><img src="../../assets/web-programming.png" alt=""></span></h1>
 </div>
   <div class="container-fluid">
     <div class="row">
@@ -13,7 +13,7 @@
                 <div class ="card-body"> 
                     <div *ngIf = "quote.upvotes == highest && quote.upvotes>0; then highlight else empty"></div>
                         <ng-template #highlight>
-                        <p appHighlight> {{quote.quote}}</p>   
+                        <p appHighlightVotr> {{quote.quote}}</p>   
                         </ng-template>
                         <ng-template #empty>
                         <p> {{quote.quote}}</p> 

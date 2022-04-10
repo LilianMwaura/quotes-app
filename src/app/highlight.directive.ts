@@ -5,19 +5,14 @@ import { Directive,ElementRef, HostListener } from '@angular/core';
 })
 export class HighlightDirective {
 
-  constructor(private elem: ElementRef) {}
+  constructor(private elem: ElementRef) {
+    this.elem.nativeElement.style.backgroundColor= "yellow";
+  }
+  }
   
-  @HostListener("clicks") onUpvotes(){
-    this.backgroundColor("yellow")
-  }
-  // @HostListener("u") onClick(){
-  //   this.backgroundColor("None")
-  // }
+  
+  
 
-  private backgroundColor(action:any){
-    this.elem.nativeElement.style.backgroundColor=action;
-  }
-}
 
     
 

@@ -1,6 +1,6 @@
 <h6 class="card-subtitle mb-2 text-muted"> {{quote.authorName}} <span id="when">Posted :{{quote.datePosted|dateCount}} days ago.</span></h6>
 <div class="container-fluid" id="buttons">
-  <button class="btn btn-sm btn-success" (click)='upvotes()'>{{quote.upvotes}}<i class="fa fa-thumbs-up" id="dislike"></i></button> 
+  <button class="btn btn-sm btn-success" (click)='upvotes()' appHighlightVotr> {{quote.upvotes}}<i class="fa fa-thumbs-up" id="dislike"></i></button> 
   <button class="btn btn-sm hate" id="hate" (click)='downvotes()'>{{quote.downvotes}} <i class="fa fa-thumbs-down" id="dislike"></i></button> 
   <button class="btn btn-sm btn-danger" id="del" (click)='quoteDelete(true)'><i class="fa fa-trash" id="delete"></i></button> 
 </div>
