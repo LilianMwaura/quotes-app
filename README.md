@@ -1,13 +1,13 @@
 # QuotesApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.1.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.1.<br>
 QuotesApp is a fun application with Coding Quotes where the user can read quotes already published and can also publish their own and add them to the list.
 
 ## Technologies used
-HTML
-CSS
-Bootsrap
-Angular CLI
+- HTML
+- CSS
+- Bootsrap
+- Angular CLI
 
 ## Code scaffolding
 
