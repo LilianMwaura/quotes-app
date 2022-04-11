@@ -1,7 +1,17 @@
-# QuotesApp
+# Project Name
+Quotes App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.1.<br>
+## Project Description
 QuotesApp is a fun application with Coding Quotes where the user can read quotes already published and can also publish their own and add them to the list.
+
+## Set-up Instructions
+Open Terminal {Ctrl+Alt+T}
+
+git clone https://lilianmwaura.github.io/quotes-app/
+
+cd quotes-app
+
+code . or atom . based on the text editor you have.
 
 ## Technologies used
 - HTML
@@ -9,15 +19,13 @@ QuotesApp is a fun application with Coding Quotes where the user can read quotes
 - Bootsrap
 - Angular CLI
 
-## Code scaffolding
+## Live Demo
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Follow link : https://lilianmwaura.github.io/quotes-app/
 
-## Build
+## Author and Contact Info
+Lilian Mwaura
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Contact Info
 Email: wambuimwaura28@gmail.com
 
 ## License
